@@ -81,6 +81,3 @@ static inline void ShouldCloseChecker(GLFWwindow** window)
      }
 }
 
-
-
-
