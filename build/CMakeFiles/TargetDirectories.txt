@@ -1,0 +1,3 @@
+/home/ray/C/Projects/BreakOut/build/CMakeFiles/Breakout.dir
+/home/ray/C/Projects/BreakOut/build/CMakeFiles/edit_cache.dir
+/home/ray/C/Projects/BreakOut/build/CMakeFiles/rebuild_cache.dir

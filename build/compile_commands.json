@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/main.c.o -c /home/ray/C/Projects/BreakOut/src/main.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/main.c",
+  "output": "CMakeFiles/Breakout.dir/src/main.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/glad.c.o -c /home/ray/C/Projects/BreakOut/src/glad.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/glad.c",
+  "output": "CMakeFiles/Breakout.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/window.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/window.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/gfx/window.c",
+  "output": "CMakeFiles/Breakout.dir/src/gfx/window.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/game.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/game.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/gfx/game.c",
+  "output": "CMakeFiles/Breakout.dir/src/gfx/game.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/shader.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/shader.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/gfx/shader.c",
+  "output": "CMakeFiles/Breakout.dir/src/gfx/shader.c.o"
+}
+]
