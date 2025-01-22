@@ -12,6 +12,7 @@ add_executable(Breakout
     src/gfx/game.c
     src/gfx/shader.c
     src/gfx/VAO.c
+    src/gfx/VBO.c
 )
 
 target_include_directories(Breakout PUBLIC

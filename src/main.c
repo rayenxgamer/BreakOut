@@ -6,6 +6,7 @@
 #include <window.h>
 #include <game.h>
 #include <VAO.h>
+#include <VBO.h>
 
 #define HEIGHT 800
 #define WIDTH 600
@@ -38,14 +39,13 @@ int main(int argc, const char* argv[])
     };
     unsigned int VAO = CreateVAO(VAO);
 
-    unsigned int VBO;
+    unsigned int VBO = CreateVBO(VBO);
     glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
     // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
     BindVAO(VAO);
 
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    BindVBO(VBO);
+    BufferVBO(sizeof(vertices), vertices);
 
     // position attribute
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
