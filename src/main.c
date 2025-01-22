@@ -26,8 +26,8 @@ int main(int argc, const char* argv[])
 
     // Create shader
     struct Shader shader = CreateShader(
-        "/home/ray/C/Projects/BreakOut/vertex_shader.glsl",
-        "/home/ray/C/Projects/BreakOut/fragment_shader.glsl",
+        "../vertex_shader.glsl",
+        "../fragment_shader.glsl",
         2,
         attributes
     );
@@ -54,16 +54,16 @@ int main(int argc, const char* argv[])
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    UnBindVAO();
 
-    glBindVertexArray(0);
+    UnBindVBO();
     while (game.running) {
         ShouldCloseChecker(&window);
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
         BindShader(shader);
-        glBindVertexArray(VAO);
+        BindVAO(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
         glfwSwapBuffers(window);
         glfwPollEvents();

@@ -16,3 +16,7 @@ void BufferVBO(GLsizeiptr size, const GLvoid *data){
     glBufferData(GL_ARRAY_BUFFER, size, data,GL_STATIC_DRAW);
 }
 
+void UnBindVBO(){
+    glBindVertexArray(0);
+}
+

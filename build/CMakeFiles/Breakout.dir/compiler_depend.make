@@ -19,11 +19,61 @@ Breakout: /usr/lib/Scrt1.o \
   /usr/lib/libc_nonshared.a \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
+  CMakeFiles/Breakout.dir/src/gfx/VAO.c.o \
+  CMakeFiles/Breakout.dir/src/gfx/VBO.c.o \
   CMakeFiles/Breakout.dir/src/gfx/game.c.o \
   CMakeFiles/Breakout.dir/src/gfx/shader.c.o \
   CMakeFiles/Breakout.dir/src/gfx/window.c.o \
   CMakeFiles/Breakout.dir/src/glad.c.o \
   CMakeFiles/Breakout.dir/src/main.c.o
+
+CMakeFiles/Breakout.dir/src/gfx/VAO.c.o: /home/ray/C/Projects/BreakOut/src/gfx/VAO.c \
+  /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/VAO.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h
+
+CMakeFiles/Breakout.dir/src/gfx/VBO.c.o: /home/ray/C/Projects/BreakOut/src/gfx/VBO.c \
+  /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/VBO.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h
 
 CMakeFiles/Breakout.dir/src/gfx/game.c.o: /home/ray/C/Projects/BreakOut/src/gfx/game.c \
   /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
@@ -465,13 +515,9 @@ CMakeFiles/Breakout.dir/src/main.c.o: /home/ray/C/Projects/BreakOut/src/main.c \
 
 /usr/include/bits/fp-logb.h:
 
-/home/ray/C/Projects/BreakOut/src/gfx/VAO.h:
-
 /home/ray/C/Projects/BreakOut/lib/cglm/vec3-ext.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/sphere.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/simd/x86.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/mat3.h:
 
@@ -493,41 +539,75 @@ CMakeFiles/Breakout.dir/src/main.c.o: /home/ray/C/Projects/BreakOut/src/main.c \
 
 /home/ray/C/Projects/BreakOut/lib/cglm/handed/euler_to_quat_rh.h:
 
+/home/ray/C/Projects/BreakOut/lib/cglm/euler.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/ease.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/curve.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/color.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/home/ray/C/Projects/BreakOut/src/gfx/game.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/bits/math-vector.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/types.h:
+
+/home/ray/C/Projects/BreakOut/src/gfx/game.c:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/home/ray/C/Projects/BreakOut/src/gfx/VBO.c:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o:
 
 /home/ray/C/Projects/BreakOut/src/glad.c:
 
-/usr/include/bits/mathcalls.h:
+/usr/include/features-time64.h:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/bits/wordsize.h:
 
-/usr/include/bits/types/__fpos_t.h:
+/usr/include/bits/wchar.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/util.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdalign.h:
 
-/usr/include/bits/struct_rwlock.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/mat4x3.h:
 
-/usr/include/bits/types/time_t.h:
+/usr/include/bits/uintn-identity.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/aabb2d.h:
+/usr/include/sys/cdefs.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/view_rh.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/cam.h:
 
-/usr/include/bits/struct_mutex.h:
+/usr/include/stdc-predef.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h:
+CMakeFiles/Breakout.dir/src/gfx/VBO.c.o:
 
-/usr/include/bits/types/__FILE.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/project_no.h:
 
-/usr/include/KHR/khrplatform.h:
+/usr/include/bits/endian.h:
 
-/usr/include/bits/types/__mbstate_t.h:
+/usr/include/bits/byteswap.h:
 
-/usr/include/bits/stdio_lim.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/plane.h:
 
-/usr/include/bits/types/struct_timeval.h:
+/usr/include/bits/mathcalls-helper-functions.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/cglm.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/simd/intrin.h:
+
+/usr/include/string.h:
 
 /usr/include/bits/stdint-uintn.h:
 
@@ -539,47 +619,21 @@ CMakeFiles/Breakout.dir/src/main.c.o: /home/ray/C/Projects/BreakOut/src/main.c \
 
 /usr/include/bits/long-double.h:
 
-/usr/include/bits/libc-header-start.h:
+/usr/include/alloca.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h:
-
-/usr/include/bits/floatn.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/ray.h:
-
-/usr/include/bits/floatn-common.h:
-
-/home/ray/C/Projects/BreakOut/lib/glfw/glfw3.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/simd/intrin.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/byteswap.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/plane.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/endian.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/project_no.h:
+/home/ray/C/Projects/BreakOut/src/gfx/VAO.h:
 
 /usr/include/bits/stdint-least.h:
-
-/usr/include/alloca.h:
 
 /usr/lib/libm.so:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/affine.h:
 
 /usr/lib/libglfw.so:
+
+/usr/include/bits/typesizes.h:
+
+/usr/lib/crti.o:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/vec4.h:
 
@@ -589,13 +643,7 @@ CMakeFiles/Breakout.dir/src/main.c.o: /home/ray/C/Projects/BreakOut/src/main.c \
 
 /usr/lib/libgcc_s.so.1:
 
-/usr/include/bits/types/__fpos64_t.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/color.h:
-
-/home/ray/C/Projects/BreakOut/src/gfx/VBO.h:
-
-/usr/include/bits/select.h:
+/usr/include/stdint.h:
 
 /usr/lib/libpthread.a:
 
@@ -605,27 +653,31 @@ CMakeFiles/Breakout.dir/src/glad.c.o:
 
 CMakeFiles/Breakout.dir/src/gfx/game.c.o:
 
+/home/ray/C/Projects/BreakOut/lib/cglm/vec4-ext.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/frustum.h:
+
+/usr/include/bits/types/locale_t.h:
+
 /usr/lib/libgcc_s.so:
 
 /home/ray/C/Projects/BreakOut/src/gfx/shader.c:
 
-/usr/include/bits/flt-eval-method.h:
-
-/usr/include/bits/types/FILE.h:
-
-/home/ray/C/Projects/BreakOut/src/gfx/game.h:
-
 /usr/lib/libc.so:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/view_rh_no.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/affine-post.h:
 
 /usr/lib/crtn.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a:
 
+/usr/include/bits/types.h:
+
 /home/ray/C/Projects/BreakOut/lib/cglm/vec2.h:
 
 /usr/lib/libc_nonshared.a:
-
-/usr/include/bits/types.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o:
 
@@ -633,7 +685,11 @@ CMakeFiles/Breakout.dir/src/gfx/shader.c.o:
 
 /usr/lib/libc.so.6:
 
-/usr/include/bits/pthreadtypes.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/simd/x86.h:
+
+/home/ray/C/Projects/BreakOut/src/gfx/VAO.c:
+
+/home/ray/C/Projects/BreakOut/src/main.c:
 
 /usr/lib/libm.so.6:
 
@@ -641,25 +697,81 @@ CMakeFiles/Breakout.dir/src/gfx/shader.c.o:
 
 /usr/lib/libmvec.so.1:
 
-/usr/include/bits/thread-shared-types.h:
+CMakeFiles/Breakout.dir/src/gfx/VAO.c.o:
 
-CMakeFiles/Breakout.dir/src/gfx/window.c.o:
+/home/ray/C/Projects/BreakOut/src/gfx/VBO.h:
 
-/home/ray/C/Projects/BreakOut/src/gfx/shader.h:
+/usr/include/bits/select.h:
 
-CMakeFiles/Breakout.dir/src/main.c.o:
+/home/ray/C/Projects/BreakOut/lib/glfw/glfw3.h:
 
-/usr/include/bits/math-vector.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/ray.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/types.h:
-
-/home/ray/C/Projects/BreakOut/src/gfx/game.c:
+/usr/include/bits/floatn-common.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/quat.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/clipspace/persp_rh_no.h:
 
-/usr/include/stdc-predef.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/mat4x2.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/endianness.h:
+
+/home/ray/C/Projects/BreakOut/src/gfx/shader.h:
+
+CMakeFiles/Breakout.dir/src/main.c.o:
+
+/usr/include/KHR/khrplatform.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/mat4.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/cglm.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/util.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/types/time_t.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/aabb2d.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/view_rh.h:
+
+CMakeFiles/Breakout.dir/src/gfx/window.c.o:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/bits/types/__sigset_t.h:
 
 /usr/include/bits/types/sigset_t.h:
 
@@ -679,16 +791,6 @@ CMakeFiles/Breakout.dir/src/main.c.o:
 
 /usr/include/stdio.h:
 
-/usr/lib/crti.o:
-
-/usr/include/bits/typesizes.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdalign.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/mat4x3.h:
-
-/usr/include/bits/uintn-identity.h:
-
 /home/ray/C/Projects/BreakOut/lib/cglm/ivec4.h:
 
 /usr/include/bits/waitflags.h:
@@ -701,43 +803,9 @@ CMakeFiles/Breakout.dir/src/main.c.o:
 
 /usr/include/bits/waitstatus.h:
 
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/bits/time64.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/mat4.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/vec4-ext.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/frustum.h:
-
-/usr/include/features-time64.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/mat4x2.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/features.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/euler.h:
-
-/usr/include/stdint.h:
-
 /usr/include/stdlib.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/clipspace/persp.h:
-
-/usr/include/sys/cdefs.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/cam.h:
 
 /usr/include/sys/types.h:
 
@@ -771,15 +839,13 @@ CMakeFiles/Breakout.dir/src/main.c.o:
 
 /usr/include/dlfcn.h:
 
-/home/ray/C/Projects/BreakOut/src/main.c:
-
 /usr/include/bits/stdint-intn.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/affine-mat.h:
 
-/usr/include/bits/pthreadtypes-arch.h:
-
 /usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/bezier.h:
 
@@ -788,11 +854,3 @@ CMakeFiles/Breakout.dir/src/main.c.o:
 /home/ray/C/Projects/BreakOut/lib/cglm/common.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/vec3.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/affine-post.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/view_rh_no.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/curve.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/ease.h:
