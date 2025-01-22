@@ -1,7 +1,7 @@
 #include <shader.h>
 
 
-GLint ReadAndCompile(const char* path, GLenum type)
+static GLint ReadAndCompile(const char* path, GLenum type)
 {
     FILE *f;
     char *text;
@@ -75,4 +75,27 @@ void DeleteShader(struct Shader self)
     glDeleteProgram(self.handle);
     glDeleteShader(self.vs_handle);
     glDeleteShader(self.fs_handle);
+}
+void Shader_SetFloat(struct Shader self,const char* name, GLfloat num)
+{
+    glUniform1f(glGetUniformLocation(self.handle, name),num);
+}
+
+void Shader_SetBool(struct Shader self, const char* name, bool value)
+{
+    glUniform1i(glGetUniformLocation(self.handle, name),value);
+}
+
+void Shader_SetInt(struct Shader self, const char* name, GLint value)
+{
+    glUniform1i(glGetUniformLocation(self.handle, name),value);
+}
+
+void Shader_SetMat4(struct Shader self, const char* name,mat4 value)
+{
+    glUniformMatrix4fv(glGetUniformLocation(self.handle, name),1, GL_FALSE, &value[0][0]);
+}
+void Shader_SetVec3(struct Shader self,const char* name, const vec3 value)
+{
+    glUniform3fv(glGetUniformLocation(self.handle,name), 1, &value[0]);
 }
