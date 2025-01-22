@@ -28,11 +28,5 @@
   "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/shader.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/shader.c",
   "file": "/home/ray/C/Projects/BreakOut/src/gfx/shader.c",
   "output": "CMakeFiles/Breakout.dir/src/gfx/shader.c.o"
-},
-{
-  "directory": "/home/ray/C/Projects/BreakOut/build",
-  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/VAO.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/VAO.c",
-  "file": "/home/ray/C/Projects/BreakOut/src/gfx/VAO.c",
-  "output": "CMakeFiles/Breakout.dir/src/gfx/VAO.c.o"
 }
 ]

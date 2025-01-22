@@ -7,7 +7,6 @@ Breakout: \
   CMakeFiles/Breakout.dir/src/gfx/window.c.o \
   CMakeFiles/Breakout.dir/src/gfx/game.c.o \
   CMakeFiles/Breakout.dir/src/gfx/shader.c.o \
-  CMakeFiles/Breakout.dir/src/gfx/VAO.c.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libglfw.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so \
@@ -53,8 +52,6 @@ CMakeFiles/Breakout.dir/src/gfx/window.c.o:
 CMakeFiles/Breakout.dir/src/gfx/game.c.o:
 
 CMakeFiles/Breakout.dir/src/gfx/shader.c.o:
-
-CMakeFiles/Breakout.dir/src/gfx/VAO.c.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libglfw.so:
 

@@ -129,30 +129,6 @@ Breakout/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/build
 .PHONY : Breakout/fast
 
-src/gfx/VAO.o: src/gfx/VAO.c.o
-.PHONY : src/gfx/VAO.o
-
-# target to build an object file
-src/gfx/VAO.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/VAO.c.o
-.PHONY : src/gfx/VAO.c.o
-
-src/gfx/VAO.i: src/gfx/VAO.c.i
-.PHONY : src/gfx/VAO.i
-
-# target to preprocess a source file
-src/gfx/VAO.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/VAO.c.i
-.PHONY : src/gfx/VAO.c.i
-
-src/gfx/VAO.s: src/gfx/VAO.c.s
-.PHONY : src/gfx/VAO.s
-
-# target to generate assembly for a file
-src/gfx/VAO.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/VAO.c.s
-.PHONY : src/gfx/VAO.c.s
-
 src/gfx/game.o: src/gfx/game.c.o
 .PHONY : src/gfx/game.o
 
@@ -282,9 +258,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Breakout"
-	@echo "... src/gfx/VAO.o"
-	@echo "... src/gfx/VAO.i"
-	@echo "... src/gfx/VAO.s"
 	@echo "... src/gfx/game.o"
 	@echo "... src/gfx/game.i"
 	@echo "... src/gfx/game.s"
