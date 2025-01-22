@@ -95,7 +95,7 @@ void Shader_SetMat4(struct Shader self, const char* name,mat4 value)
 {
     glUniformMatrix4fv(glGetUniformLocation(self.handle, name),1, GL_FALSE, &value[0][0]);
 }
-void Shader_SetVec3(struct Shader self,const char* name, const vec3 value)
+void Shader_SetVec3(struct Shader self,const char* name, vec3 value)
 {
     glUniform3fv(glGetUniformLocation(self.handle,name), 1, &value[0]);
 }

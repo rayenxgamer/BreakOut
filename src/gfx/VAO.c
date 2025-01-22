@@ -1,8 +1,9 @@
 #include <VAO.h>
 
 
-void CreateVAO(unsigned int VAO){
+inline GLuint CreateVAO(unsigned int VAO){
     glGenVertexArrays(1,&VAO);
+    return VAO;
 }
 
 
