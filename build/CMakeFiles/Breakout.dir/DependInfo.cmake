@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ray/C/Projects/BreakOut/src/gfx/VAO.c" "CMakeFiles/Breakout.dir/src/gfx/VAO.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/VAO.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/gfx/game.c" "CMakeFiles/Breakout.dir/src/gfx/game.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/game.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/gfx/shader.c" "CMakeFiles/Breakout.dir/src/gfx/shader.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/shader.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/gfx/window.c" "CMakeFiles/Breakout.dir/src/gfx/window.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/window.c.o.d"
