@@ -1,5 +1,6 @@
 CMakeFiles/Breakout.dir/src/main.c.o: \
  /home/ray/C/Projects/BreakOut/src/main.c /usr/include/stdc-predef.h \
+ /home/ray/C/Projects/BreakOut/src/gfx/renderer.h \
  /home/ray/C/Projects/BreakOut/src/gfx/shader.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \

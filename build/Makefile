@@ -129,6 +129,30 @@ Breakout/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/build
 .PHONY : Breakout/fast
 
+src/gfx/EBO.o: src/gfx/EBO.c.o
+.PHONY : src/gfx/EBO.o
+
+# target to build an object file
+src/gfx/EBO.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/EBO.c.o
+.PHONY : src/gfx/EBO.c.o
+
+src/gfx/EBO.i: src/gfx/EBO.c.i
+.PHONY : src/gfx/EBO.i
+
+# target to preprocess a source file
+src/gfx/EBO.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/EBO.c.i
+.PHONY : src/gfx/EBO.c.i
+
+src/gfx/EBO.s: src/gfx/EBO.c.s
+.PHONY : src/gfx/EBO.s
+
+# target to generate assembly for a file
+src/gfx/EBO.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/EBO.c.s
+.PHONY : src/gfx/EBO.c.s
+
 src/gfx/VAO.o: src/gfx/VAO.c.o
 .PHONY : src/gfx/VAO.o
 
@@ -200,6 +224,30 @@ src/gfx/game.s: src/gfx/game.c.s
 src/gfx/game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/game.c.s
 .PHONY : src/gfx/game.c.s
+
+src/gfx/renderer.o: src/gfx/renderer.c.o
+.PHONY : src/gfx/renderer.o
+
+# target to build an object file
+src/gfx/renderer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/renderer.c.o
+.PHONY : src/gfx/renderer.c.o
+
+src/gfx/renderer.i: src/gfx/renderer.c.i
+.PHONY : src/gfx/renderer.i
+
+# target to preprocess a source file
+src/gfx/renderer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/renderer.c.i
+.PHONY : src/gfx/renderer.c.i
+
+src/gfx/renderer.s: src/gfx/renderer.c.s
+.PHONY : src/gfx/renderer.s
+
+# target to generate assembly for a file
+src/gfx/renderer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/renderer.c.s
+.PHONY : src/gfx/renderer.c.s
 
 src/gfx/shader.o: src/gfx/shader.c.o
 .PHONY : src/gfx/shader.o
@@ -306,6 +354,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Breakout"
+	@echo "... src/gfx/EBO.o"
+	@echo "... src/gfx/EBO.i"
+	@echo "... src/gfx/EBO.s"
 	@echo "... src/gfx/VAO.o"
 	@echo "... src/gfx/VAO.i"
 	@echo "... src/gfx/VAO.s"
@@ -315,6 +366,9 @@ help:
 	@echo "... src/gfx/game.o"
 	@echo "... src/gfx/game.i"
 	@echo "... src/gfx/game.s"
+	@echo "... src/gfx/renderer.o"
+	@echo "... src/gfx/renderer.i"
+	@echo "... src/gfx/renderer.s"
 	@echo "... src/gfx/shader.o"
 	@echo "... src/gfx/shader.i"
 	@echo "... src/gfx/shader.s"

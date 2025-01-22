@@ -19,13 +19,39 @@ Breakout: /usr/lib/Scrt1.o \
   /usr/lib/libc_nonshared.a \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
+  CMakeFiles/Breakout.dir/src/gfx/EBO.c.o \
   CMakeFiles/Breakout.dir/src/gfx/VAO.c.o \
   CMakeFiles/Breakout.dir/src/gfx/VBO.c.o \
   CMakeFiles/Breakout.dir/src/gfx/game.c.o \
+  CMakeFiles/Breakout.dir/src/gfx/renderer.c.o \
   CMakeFiles/Breakout.dir/src/gfx/shader.c.o \
   CMakeFiles/Breakout.dir/src/gfx/window.c.o \
   CMakeFiles/Breakout.dir/src/glad.c.o \
   CMakeFiles/Breakout.dir/src/main.c.o
+
+CMakeFiles/Breakout.dir/src/gfx/EBO.c.o: /home/ray/C/Projects/BreakOut/src/gfx/EBO.c \
+  /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/EBO.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h
 
 CMakeFiles/Breakout.dir/src/gfx/VAO.c.o: /home/ray/C/Projects/BreakOut/src/gfx/VAO.c \
   /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
@@ -140,6 +166,33 @@ CMakeFiles/Breakout.dir/src/gfx/game.c.o: /home/ray/C/Projects/BreakOut/src/gfx/
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdbool.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h
+
+CMakeFiles/Breakout.dir/src/gfx/renderer.c.o: /home/ray/C/Projects/BreakOut/src/gfx/renderer.c \
+  /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/EBO.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/VAO.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/VBO.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/renderer.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h
 
 CMakeFiles/Breakout.dir/src/gfx/shader.c.o: /home/ray/C/Projects/BreakOut/src/gfx/shader.c \
@@ -417,6 +470,7 @@ CMakeFiles/Breakout.dir/src/main.c.o: /home/ray/C/Projects/BreakOut/src/main.c \
   /home/ray/C/Projects/BreakOut/src/gfx/VAO.h \
   /home/ray/C/Projects/BreakOut/src/gfx/VBO.h \
   /home/ray/C/Projects/BreakOut/src/gfx/game.h \
+  /home/ray/C/Projects/BreakOut/src/gfx/renderer.h \
   /home/ray/C/Projects/BreakOut/src/gfx/shader.h \
   /home/ray/C/Projects/BreakOut/src/gfx/window.h \
   /usr/include/KHR/khrplatform.h \
@@ -547,9 +601,17 @@ CMakeFiles/Breakout.dir/src/main.c.o: /home/ray/C/Projects/BreakOut/src/main.c \
 
 /home/ray/C/Projects/BreakOut/lib/cglm/color.h:
 
-/usr/include/bits/atomic_wide_counter.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/view_rh.h:
 
-/usr/include/bits/types/clockid_t.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/quat.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/persp_rh_no.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/persp.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/ortho_rh_no.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/vec4.h:
 
 /home/ray/C/Projects/BreakOut/src/gfx/game.h:
 
@@ -562,6 +624,16 @@ CMakeFiles/Breakout.dir/src/main.c.o: /home/ray/C/Projects/BreakOut/src/main.c \
 /home/ray/C/Projects/BreakOut/lib/cglm/types.h:
 
 /home/ray/C/Projects/BreakOut/src/gfx/game.c:
+
+/home/ray/C/Projects/BreakOut/src/gfx/VAO.h:
+
+/usr/include/alloca.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/simd/x86.h:
+
+/home/ray/C/Projects/BreakOut/src/gfx/VAO.c:
+
+/home/ray/C/Projects/BreakOut/src/main.c:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h:
 
@@ -599,29 +671,25 @@ CMakeFiles/Breakout.dir/src/gfx/VBO.c.o:
 
 /usr/include/bits/endian.h:
 
-/usr/include/bits/byteswap.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/plane.h:
-
 /usr/include/bits/mathcalls-helper-functions.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/simd/intrin.h:
 
 /usr/include/string.h:
 
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/include/endian.h:
-
 /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/mat4.h:
 
 /usr/include/bits/long-double.h:
 
-/usr/include/alloca.h:
+/usr/include/KHR/khrplatform.h:
 
-/home/ray/C/Projects/BreakOut/src/gfx/VAO.h:
+/home/ray/C/Projects/BreakOut/lib/cglm/mat4.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/types/__FILE.h:
 
 /usr/include/bits/stdint-least.h:
 
@@ -634,8 +702,6 @@ CMakeFiles/Breakout.dir/src/gfx/VBO.c.o:
 /usr/include/bits/typesizes.h:
 
 /usr/lib/crti.o:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/vec4.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/mat2x4.h:
 
@@ -663,15 +729,17 @@ CMakeFiles/Breakout.dir/src/gfx/game.c.o:
 
 /home/ray/C/Projects/BreakOut/src/gfx/shader.c:
 
+/home/ray/C/Projects/BreakOut/src/gfx/EBO.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/cglm.h:
+
 /usr/lib/libc.so:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/clipspace/view_rh_no.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/affine-post.h:
-
-/usr/lib/crtn.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a:
 
 /usr/include/bits/types.h:
 
@@ -683,13 +751,13 @@ CMakeFiles/Breakout.dir/src/gfx/game.c.o:
 
 CMakeFiles/Breakout.dir/src/gfx/shader.c.o:
 
+/usr/lib/crtn.o:
+
+CMakeFiles/Breakout.dir/src/gfx/EBO.c.o:
+
 /usr/lib/libc.so.6:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/simd/x86.h:
-
-/home/ray/C/Projects/BreakOut/src/gfx/VAO.c:
-
-/home/ray/C/Projects/BreakOut/src/main.c:
+/home/ray/C/Projects/BreakOut/src/gfx/EBO.c:
 
 /usr/lib/libm.so.6:
 
@@ -709,9 +777,23 @@ CMakeFiles/Breakout.dir/src/gfx/VAO.c.o:
 
 /usr/include/bits/floatn-common.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/quat.h:
+/usr/include/bits/stdint-uintn.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/persp_rh_no.h:
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/endian.h:
+
+CMakeFiles/Breakout.dir/src/gfx/renderer.c.o:
+
+CMakeFiles/Breakout.dir/src/main.c.o:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/byteswap.h:
+
+/home/ray/C/Projects/BreakOut/lib/cglm/plane.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/mat4x2.h:
 
@@ -721,25 +803,9 @@ CMakeFiles/Breakout.dir/src/gfx/VAO.c.o:
 
 /home/ray/C/Projects/BreakOut/src/gfx/shader.h:
 
-CMakeFiles/Breakout.dir/src/main.c.o:
-
-/usr/include/KHR/khrplatform.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/mat4.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/bits/types/__FILE.h:
-
 /usr/include/bits/floatn.h:
 
 /usr/include/bits/pthreadtypes.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/cglm.h:
 
 /usr/include/bits/struct_mutex.h:
 
@@ -752,8 +818,6 @@ CMakeFiles/Breakout.dir/src/main.c.o:
 /usr/include/bits/types/time_t.h:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/aabb2d.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/view_rh.h:
 
 CMakeFiles/Breakout.dir/src/gfx/window.c.o:
 
@@ -805,8 +869,6 @@ CMakeFiles/Breakout.dir/src/gfx/window.c.o:
 
 /usr/include/stdlib.h:
 
-/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/persp.h:
-
 /usr/include/sys/types.h:
 
 /home/ray/C/Projects/BreakOut/lib/glad/glad.h:
@@ -823,6 +885,12 @@ CMakeFiles/Breakout.dir/src/gfx/window.c.o:
 
 /home/ray/C/Projects/BreakOut/lib/cglm/affine-pre.h:
 
+/home/ray/C/Projects/BreakOut/src/gfx/renderer.c:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a:
+
+/home/ray/C/Projects/BreakOut/src/gfx/renderer.h:
+
 /usr/lib/ld-linux-x86-64.so.2:
 
 /usr/include/assert.h:
@@ -830,8 +898,6 @@ CMakeFiles/Breakout.dir/src/gfx/window.c.o:
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/strings.h:
-
-/home/ray/C/Projects/BreakOut/lib/cglm/clipspace/ortho_rh_no.h:
 
 /home/ray/C/Projects/BreakOut/src/gfx/window.c:
 

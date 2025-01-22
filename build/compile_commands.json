@@ -40,5 +40,17 @@
   "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/VBO.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/VBO.c",
   "file": "/home/ray/C/Projects/BreakOut/src/gfx/VBO.c",
   "output": "CMakeFiles/Breakout.dir/src/gfx/VBO.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/EBO.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/EBO.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/gfx/EBO.c",
+  "output": "CMakeFiles/Breakout.dir/src/gfx/EBO.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/renderer.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/renderer.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/gfx/renderer.c",
+  "output": "CMakeFiles/Breakout.dir/src/gfx/renderer.c.o"
 }
 ]
