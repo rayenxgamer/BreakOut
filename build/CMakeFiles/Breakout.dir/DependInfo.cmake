@@ -14,9 +14,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ray/C/Projects/BreakOut/src/gfx/game.c" "CMakeFiles/Breakout.dir/src/gfx/game.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/game.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/gfx/renderer.c" "CMakeFiles/Breakout.dir/src/gfx/renderer.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/renderer.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/gfx/shader.c" "CMakeFiles/Breakout.dir/src/gfx/shader.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/shader.c.o.d"
+  "/home/ray/C/Projects/BreakOut/src/gfx/texture.c" "CMakeFiles/Breakout.dir/src/gfx/texture.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/texture.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/gfx/window.c" "CMakeFiles/Breakout.dir/src/gfx/window.c.o" "gcc" "CMakeFiles/Breakout.dir/src/gfx/window.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/glad.c" "CMakeFiles/Breakout.dir/src/glad.c.o" "gcc" "CMakeFiles/Breakout.dir/src/glad.c.o.d"
   "/home/ray/C/Projects/BreakOut/src/main.c" "CMakeFiles/Breakout.dir/src/main.c.o" "gcc" "CMakeFiles/Breakout.dir/src/main.c.o.d"
+  "/home/ray/C/Projects/BreakOut/src/stb_image.c" "CMakeFiles/Breakout.dir/src/stb_image.c.o" "gcc" "CMakeFiles/Breakout.dir/src/stb_image.c.o.d"
   "" "Breakout" "gcc" "CMakeFiles/Breakout.dir/link.d"
   )
 

@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/stb_image.c.o -c /home/ray/C/Projects/BreakOut/src/stb_image.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/stb_image.c",
+  "output": "CMakeFiles/Breakout.dir/src/stb_image.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
   "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/window.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/window.c",
   "file": "/home/ray/C/Projects/BreakOut/src/gfx/window.c",
   "output": "CMakeFiles/Breakout.dir/src/gfx/window.c.o"
@@ -28,6 +34,12 @@
   "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/shader.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/shader.c",
   "file": "/home/ray/C/Projects/BreakOut/src/gfx/shader.c",
   "output": "CMakeFiles/Breakout.dir/src/gfx/shader.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/texture.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/texture.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/gfx/texture.c",
+  "output": "CMakeFiles/Breakout.dir/src/gfx/texture.c.o"
 },
 {
   "directory": "/home/ray/C/Projects/BreakOut/build",

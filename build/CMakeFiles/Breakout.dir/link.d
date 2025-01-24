@@ -4,9 +4,11 @@ Breakout: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o \
   CMakeFiles/Breakout.dir/src/main.c.o \
   CMakeFiles/Breakout.dir/src/glad.c.o \
+  CMakeFiles/Breakout.dir/src/stb_image.c.o \
   CMakeFiles/Breakout.dir/src/gfx/window.c.o \
   CMakeFiles/Breakout.dir/src/gfx/game.c.o \
   CMakeFiles/Breakout.dir/src/gfx/shader.c.o \
+  CMakeFiles/Breakout.dir/src/gfx/texture.c.o \
   CMakeFiles/Breakout.dir/src/gfx/VAO.c.o \
   CMakeFiles/Breakout.dir/src/gfx/VBO.c.o \
   CMakeFiles/Breakout.dir/src/gfx/EBO.c.o \
@@ -51,11 +53,15 @@ CMakeFiles/Breakout.dir/src/main.c.o:
 
 CMakeFiles/Breakout.dir/src/glad.c.o:
 
+CMakeFiles/Breakout.dir/src/stb_image.c.o:
+
 CMakeFiles/Breakout.dir/src/gfx/window.c.o:
 
 CMakeFiles/Breakout.dir/src/gfx/game.c.o:
 
 CMakeFiles/Breakout.dir/src/gfx/shader.c.o:
+
+CMakeFiles/Breakout.dir/src/gfx/texture.c.o:
 
 CMakeFiles/Breakout.dir/src/gfx/VAO.c.o:
 

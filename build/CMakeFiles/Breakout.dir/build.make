@@ -100,10 +100,24 @@ CMakeFiles/Breakout.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/glad.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ray/C/Projects/BreakOut/src/glad.c -o CMakeFiles/Breakout.dir/src/glad.c.s
 
+CMakeFiles/Breakout.dir/src/stb_image.c.o: CMakeFiles/Breakout.dir/flags.make
+CMakeFiles/Breakout.dir/src/stb_image.c.o: /home/ray/C/Projects/BreakOut/src/stb_image.c
+CMakeFiles/Breakout.dir/src/stb_image.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Breakout.dir/src/stb_image.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/stb_image.c.o -MF CMakeFiles/Breakout.dir/src/stb_image.c.o.d -o CMakeFiles/Breakout.dir/src/stb_image.c.o -c /home/ray/C/Projects/BreakOut/src/stb_image.c
+
+CMakeFiles/Breakout.dir/src/stb_image.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Breakout.dir/src/stb_image.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ray/C/Projects/BreakOut/src/stb_image.c > CMakeFiles/Breakout.dir/src/stb_image.c.i
+
+CMakeFiles/Breakout.dir/src/stb_image.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/stb_image.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ray/C/Projects/BreakOut/src/stb_image.c -o CMakeFiles/Breakout.dir/src/stb_image.c.s
+
 CMakeFiles/Breakout.dir/src/gfx/window.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/gfx/window.c.o: /home/ray/C/Projects/BreakOut/src/gfx/window.c
 CMakeFiles/Breakout.dir/src/gfx/window.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Breakout.dir/src/gfx/window.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Breakout.dir/src/gfx/window.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/window.c.o -MF CMakeFiles/Breakout.dir/src/gfx/window.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/window.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/window.c
 
 CMakeFiles/Breakout.dir/src/gfx/window.c.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/Breakout.dir/src/gfx/window.c.s: cmake_force
 CMakeFiles/Breakout.dir/src/gfx/game.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/gfx/game.c.o: /home/ray/C/Projects/BreakOut/src/gfx/game.c
 CMakeFiles/Breakout.dir/src/gfx/game.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Breakout.dir/src/gfx/game.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Breakout.dir/src/gfx/game.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/game.c.o -MF CMakeFiles/Breakout.dir/src/gfx/game.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/game.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/game.c
 
 CMakeFiles/Breakout.dir/src/gfx/game.c.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/Breakout.dir/src/gfx/game.c.s: cmake_force
 CMakeFiles/Breakout.dir/src/gfx/shader.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/gfx/shader.c.o: /home/ray/C/Projects/BreakOut/src/gfx/shader.c
 CMakeFiles/Breakout.dir/src/gfx/shader.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Breakout.dir/src/gfx/shader.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Breakout.dir/src/gfx/shader.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/shader.c.o -MF CMakeFiles/Breakout.dir/src/gfx/shader.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/shader.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/shader.c
 
 CMakeFiles/Breakout.dir/src/gfx/shader.c.i: cmake_force
@@ -142,10 +156,24 @@ CMakeFiles/Breakout.dir/src/gfx/shader.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/gfx/shader.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ray/C/Projects/BreakOut/src/gfx/shader.c -o CMakeFiles/Breakout.dir/src/gfx/shader.c.s
 
+CMakeFiles/Breakout.dir/src/gfx/texture.c.o: CMakeFiles/Breakout.dir/flags.make
+CMakeFiles/Breakout.dir/src/gfx/texture.c.o: /home/ray/C/Projects/BreakOut/src/gfx/texture.c
+CMakeFiles/Breakout.dir/src/gfx/texture.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Breakout.dir/src/gfx/texture.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/texture.c.o -MF CMakeFiles/Breakout.dir/src/gfx/texture.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/texture.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/texture.c
+
+CMakeFiles/Breakout.dir/src/gfx/texture.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Breakout.dir/src/gfx/texture.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ray/C/Projects/BreakOut/src/gfx/texture.c > CMakeFiles/Breakout.dir/src/gfx/texture.c.i
+
+CMakeFiles/Breakout.dir/src/gfx/texture.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/gfx/texture.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ray/C/Projects/BreakOut/src/gfx/texture.c -o CMakeFiles/Breakout.dir/src/gfx/texture.c.s
+
 CMakeFiles/Breakout.dir/src/gfx/VAO.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/gfx/VAO.c.o: /home/ray/C/Projects/BreakOut/src/gfx/VAO.c
 CMakeFiles/Breakout.dir/src/gfx/VAO.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Breakout.dir/src/gfx/VAO.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Breakout.dir/src/gfx/VAO.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/VAO.c.o -MF CMakeFiles/Breakout.dir/src/gfx/VAO.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/VAO.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/VAO.c
 
 CMakeFiles/Breakout.dir/src/gfx/VAO.c.i: cmake_force
@@ -159,7 +187,7 @@ CMakeFiles/Breakout.dir/src/gfx/VAO.c.s: cmake_force
 CMakeFiles/Breakout.dir/src/gfx/VBO.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/gfx/VBO.c.o: /home/ray/C/Projects/BreakOut/src/gfx/VBO.c
 CMakeFiles/Breakout.dir/src/gfx/VBO.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Breakout.dir/src/gfx/VBO.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Breakout.dir/src/gfx/VBO.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/VBO.c.o -MF CMakeFiles/Breakout.dir/src/gfx/VBO.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/VBO.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/VBO.c
 
 CMakeFiles/Breakout.dir/src/gfx/VBO.c.i: cmake_force
@@ -173,7 +201,7 @@ CMakeFiles/Breakout.dir/src/gfx/VBO.c.s: cmake_force
 CMakeFiles/Breakout.dir/src/gfx/EBO.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/gfx/EBO.c.o: /home/ray/C/Projects/BreakOut/src/gfx/EBO.c
 CMakeFiles/Breakout.dir/src/gfx/EBO.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Breakout.dir/src/gfx/EBO.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Breakout.dir/src/gfx/EBO.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/EBO.c.o -MF CMakeFiles/Breakout.dir/src/gfx/EBO.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/EBO.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/EBO.c
 
 CMakeFiles/Breakout.dir/src/gfx/EBO.c.i: cmake_force
@@ -187,7 +215,7 @@ CMakeFiles/Breakout.dir/src/gfx/EBO.c.s: cmake_force
 CMakeFiles/Breakout.dir/src/gfx/renderer.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/gfx/renderer.c.o: /home/ray/C/Projects/BreakOut/src/gfx/renderer.c
 CMakeFiles/Breakout.dir/src/gfx/renderer.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Breakout.dir/src/gfx/renderer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Breakout.dir/src/gfx/renderer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/gfx/renderer.c.o -MF CMakeFiles/Breakout.dir/src/gfx/renderer.c.o.d -o CMakeFiles/Breakout.dir/src/gfx/renderer.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/renderer.c
 
 CMakeFiles/Breakout.dir/src/gfx/renderer.c.i: cmake_force
@@ -202,9 +230,11 @@ CMakeFiles/Breakout.dir/src/gfx/renderer.c.s: cmake_force
 Breakout_OBJECTS = \
 "CMakeFiles/Breakout.dir/src/main.c.o" \
 "CMakeFiles/Breakout.dir/src/glad.c.o" \
+"CMakeFiles/Breakout.dir/src/stb_image.c.o" \
 "CMakeFiles/Breakout.dir/src/gfx/window.c.o" \
 "CMakeFiles/Breakout.dir/src/gfx/game.c.o" \
 "CMakeFiles/Breakout.dir/src/gfx/shader.c.o" \
+"CMakeFiles/Breakout.dir/src/gfx/texture.c.o" \
 "CMakeFiles/Breakout.dir/src/gfx/VAO.c.o" \
 "CMakeFiles/Breakout.dir/src/gfx/VBO.c.o" \
 "CMakeFiles/Breakout.dir/src/gfx/EBO.c.o" \
@@ -215,9 +245,11 @@ Breakout_EXTERNAL_OBJECTS =
 
 Breakout: CMakeFiles/Breakout.dir/src/main.c.o
 Breakout: CMakeFiles/Breakout.dir/src/glad.c.o
+Breakout: CMakeFiles/Breakout.dir/src/stb_image.c.o
 Breakout: CMakeFiles/Breakout.dir/src/gfx/window.c.o
 Breakout: CMakeFiles/Breakout.dir/src/gfx/game.c.o
 Breakout: CMakeFiles/Breakout.dir/src/gfx/shader.c.o
+Breakout: CMakeFiles/Breakout.dir/src/gfx/texture.c.o
 Breakout: CMakeFiles/Breakout.dir/src/gfx/VAO.c.o
 Breakout: CMakeFiles/Breakout.dir/src/gfx/VBO.c.o
 Breakout: CMakeFiles/Breakout.dir/src/gfx/EBO.c.o
@@ -225,7 +257,7 @@ Breakout: CMakeFiles/Breakout.dir/src/gfx/renderer.c.o
 Breakout: CMakeFiles/Breakout.dir/build.make
 Breakout: CMakeFiles/Breakout.dir/compiler_depend.ts
 Breakout: CMakeFiles/Breakout.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable Breakout"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ray/C/Projects/BreakOut/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable Breakout"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Breakout.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

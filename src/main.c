@@ -8,6 +8,7 @@
 #include <game.h>
 #include <VAO.h>
 #include <VBO.h>
+#include <texture.h>
 
 #define HEIGHT 800
 #define WIDTH 600
@@ -26,6 +27,8 @@ int main(int argc, const char* argv[])
     };
     // Initialize window
     init_window(&window, WIDTH, HEIGHT, "Breakout");
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glfwSetKeyCallback(window, key_callback);
 
     // Create shader
@@ -35,6 +38,7 @@ int main(int argc, const char* argv[])
         2,
         attributes
     );
+    struct Texture Wall = T_LoadTextureFromFile(Wall, "../mario.png");
 
     unsigned int VAO = CreateVAO(VAO);
 
@@ -43,14 +47,15 @@ int main(int argc, const char* argv[])
     glGenBuffers(1,&EBO);
     BindVAO(VAO);
     BindVBO(VBO);
-
-
+    T_Bind(Wall);
 
 
     // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
     // position attribute
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(0);
+    glEnableVertexAttribArray(1);
 
     // color attribute
 
@@ -60,7 +65,7 @@ int main(int argc, const char* argv[])
         glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
         BindShader(shader);
         BindVAO(VAO);
-        Renderer_InitRect(X, Y, 0.5f, 0.5f, VAO, VBO, EBO);
+        Renderer_InitRect(X, Y, 0.5f, 0.5f,0.97f,0.0f, VAO, VBO, EBO);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }

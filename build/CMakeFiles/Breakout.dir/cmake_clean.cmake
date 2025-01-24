@@ -14,12 +14,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/Breakout.dir/src/gfx/renderer.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/shader.c.o"
   "CMakeFiles/Breakout.dir/src/gfx/shader.c.o.d"
+  "CMakeFiles/Breakout.dir/src/gfx/texture.c.o"
+  "CMakeFiles/Breakout.dir/src/gfx/texture.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/window.c.o"
   "CMakeFiles/Breakout.dir/src/gfx/window.c.o.d"
   "CMakeFiles/Breakout.dir/src/glad.c.o"
   "CMakeFiles/Breakout.dir/src/glad.c.o.d"
   "CMakeFiles/Breakout.dir/src/main.c.o"
   "CMakeFiles/Breakout.dir/src/main.c.o.d"
+  "CMakeFiles/Breakout.dir/src/stb_image.c.o"
+  "CMakeFiles/Breakout.dir/src/stb_image.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

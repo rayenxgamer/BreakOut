@@ -273,6 +273,30 @@ src/gfx/shader.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/shader.c.s
 .PHONY : src/gfx/shader.c.s
 
+src/gfx/texture.o: src/gfx/texture.c.o
+.PHONY : src/gfx/texture.o
+
+# target to build an object file
+src/gfx/texture.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/texture.c.o
+.PHONY : src/gfx/texture.c.o
+
+src/gfx/texture.i: src/gfx/texture.c.i
+.PHONY : src/gfx/texture.i
+
+# target to preprocess a source file
+src/gfx/texture.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/texture.c.i
+.PHONY : src/gfx/texture.c.i
+
+src/gfx/texture.s: src/gfx/texture.c.s
+.PHONY : src/gfx/texture.s
+
+# target to generate assembly for a file
+src/gfx/texture.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/texture.c.s
+.PHONY : src/gfx/texture.c.s
+
 src/gfx/window.o: src/gfx/window.c.o
 .PHONY : src/gfx/window.o
 
@@ -345,6 +369,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/stb_image.o: src/stb_image.c.o
+.PHONY : src/stb_image.o
+
+# target to build an object file
+src/stb_image.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/stb_image.c.o
+.PHONY : src/stb_image.c.o
+
+src/stb_image.i: src/stb_image.c.i
+.PHONY : src/stb_image.i
+
+# target to preprocess a source file
+src/stb_image.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/stb_image.c.i
+.PHONY : src/stb_image.c.i
+
+src/stb_image.s: src/stb_image.c.s
+.PHONY : src/stb_image.s
+
+# target to generate assembly for a file
+src/stb_image.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/stb_image.c.s
+.PHONY : src/stb_image.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -372,6 +420,9 @@ help:
 	@echo "... src/gfx/shader.o"
 	@echo "... src/gfx/shader.i"
 	@echo "... src/gfx/shader.s"
+	@echo "... src/gfx/texture.o"
+	@echo "... src/gfx/texture.i"
+	@echo "... src/gfx/texture.s"
 	@echo "... src/gfx/window.o"
 	@echo "... src/gfx/window.i"
 	@echo "... src/gfx/window.s"
@@ -381,6 +432,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/stb_image.o"
+	@echo "... src/stb_image.i"
+	@echo "... src/stb_image.s"
 .PHONY : help
 
 

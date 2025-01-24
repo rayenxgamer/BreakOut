@@ -123,4 +123,6 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /home/ray/C/Projects/BreakOut/src/gfx/window.h \
  /home/ray/C/Projects/BreakOut/src/gfx/game.h \
  /home/ray/C/Projects/BreakOut/src/gfx/VAO.h \
- /home/ray/C/Projects/BreakOut/src/gfx/VBO.h
+ /home/ray/C/Projects/BreakOut/src/gfx/VBO.h \
+ /home/ray/C/Projects/BreakOut/src/gfx/texture.h \
+ /home/ray/C/Projects/BreakOut/lib/stb/stb_image.h

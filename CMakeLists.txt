@@ -8,9 +8,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_executable(Breakout
     src/main.c
     src/glad.c
+    src/stb_image.c
     src/gfx/window.c
     src/gfx/game.c
     src/gfx/shader.c
+    src/gfx/texture.c
     src/gfx/VAO.c
     src/gfx/VBO.c
     src/gfx/EBO.c
