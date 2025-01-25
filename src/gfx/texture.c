@@ -50,11 +50,29 @@ struct Texture T_LoadTextureFromFile(struct Texture self, const char* path, bool
     return self;
 }
 
-struct Texture T_LoadAtlas(struct Texture self, int GridX, int GridY, int Posx, int Posy){
-    // apparently i need this?
-    // TODO: figure out why i might need this
-    size_t px_x = self.width/GridX;
-    return self;
+struct Texture T_LoadAtlas(struct Texture* self,float GridSize, float GridX, float GridY){
+    self -> GridSize = GridSize;
+    float i = 0.0f;
+    float j = 0.0f;
+    if (GridX == 0){
+        GridX++;
+        if (GridY != 0) {
+            GridY --;
+        }
+    }
+    GridX = GridX * GridSize;
+    GridY = GridY * GridSize;
+    while (i<GridX) {
+        i+=GridSize;
+    }
+    while (j<GridY) {
+        j+=GridSize;
+    }
+    self ->uvX = i;
+    self ->uvY = j;
+    printf("%f\n", i);
+    printf("%f\n", j);
+    return *self;
 }
 
 void T_Bind(struct Texture self){

@@ -15,12 +15,6 @@
 float X = -0.5f;
 float Y = -0.5f;
 
-
-float uvX, uvY;
-float x = 96.0f;
-float y = 48.0f;
-float GridSize = 16.0f;
-
 static inline void ShouldCloseChecker(GLFWwindow** window);
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 
@@ -29,7 +23,7 @@ int main(int argc, const char* argv[])
     GLFWwindow* window;
     struct VertexAttr attributes[] = {
         {0, "position"},
-        {1, "color"},
+        {1, "texture"},
     };
     // Initialize window
     init_window(&window, WIDTH, HEIGHT, "Breakout");
@@ -45,6 +39,8 @@ int main(int argc, const char* argv[])
         attributes
     );
     struct Texture Wall = T_LoadTextureFromFile(Wall, "../blocks.png", false);
+    T_LoadAtlas(&Wall, 16, 3, 6);
+
     unsigned int VAO = CreateVAO(VAO);
 
     unsigned int VBO = CreateVBO(VBO);
@@ -53,7 +49,6 @@ int main(int argc, const char* argv[])
     BindVAO(VAO);
     BindVBO(VBO);
     T_Bind(Wall);
-
 
     // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
     // position attribute
@@ -69,9 +64,7 @@ int main(int argc, const char* argv[])
         glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
         BindShader(shader);
         BindVAO(VAO);
-        uvX = x;
-        uvY = y;
-        Renderer_InitRect(X, Y,0.8f,0.6f, uvX/Wall.width, (uvX-GridSize)/Wall.width,(uvY+GridSize)/Wall.height,uvY/Wall.height, VAO, VBO, EBO);
+        Renderer_InitRect(X, Y,0.8f,0.6f, Wall.uvX/Wall.width, (Wall.uvX-Wall.GridSize)/Wall.width,(Wall.uvY+Wall.GridSize)/Wall.height,Wall.uvY/Wall.height, VAO, VBO, EBO);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
@@ -94,18 +87,14 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         game.running = false;
-    if (key == GLFW_KEY_D && action == GLFW_PRESS){
+    if (key == GLFW_KEY_D && action == GLFW_PRESS)
          X += 0.1f;
-         x += GridSize;}
-    else if (key == GLFW_KEY_A && action == GLFW_PRESS){
+    else if (key == GLFW_KEY_A && action == GLFW_PRESS)
          X -= 0.1f;
-         x -= GridSize;}
-    else if (key == GLFW_KEY_W && action == GLFW_PRESS){
+    else if (key == GLFW_KEY_W && action == GLFW_PRESS)
          Y += 0.1f;
-         y += GridSize;}
-    else if (key == GLFW_KEY_S && action == GLFW_PRESS){
+    else if (key == GLFW_KEY_S && action == GLFW_PRESS)
          Y -= 0.1f;
-         y -= GridSize;}
 }
 
 
