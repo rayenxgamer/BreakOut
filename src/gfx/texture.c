@@ -5,6 +5,7 @@
 #include <texture.h>
 
 struct Texture T_LoadTextureFromFile(struct Texture self, const char* path, bool flip){
+    self.isAtlas = false;
     glGenTextures(1,&self.ID);
     glBindTexture(GL_TEXTURE_2D, self.ID);
     // paramamamamamother
@@ -51,15 +52,11 @@ struct Texture T_LoadTextureFromFile(struct Texture self, const char* path, bool
 }
 
 struct Texture T_LoadAtlas(struct Texture* self,float GridSize, float GridX, float GridY){
+    self -> isAtlas = true;
     self -> GridSize = GridSize;
     float i = 0.0f;
     float j = 0.0f;
-    if (GridX == 0){
-        GridX++;
-        if (GridY != 0) {
-            GridY --;
-        }
-    }
+    GridX++;
     GridX = GridX * GridSize;
     GridY = GridY * GridSize;
     while (i<GridX) {

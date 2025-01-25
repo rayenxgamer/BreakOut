@@ -9,6 +9,7 @@ struct Texture{
     int width, height, nrChannels;
     float uvX,uvY;
     float GridSize;
+    bool isAtlas;
 };
 
 struct Texture T_LoadTextureFromFile(struct Texture self, const char* path, bool flip);

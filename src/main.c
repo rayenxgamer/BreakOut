@@ -39,8 +39,7 @@ int main(int argc, const char* argv[])
         attributes
     );
     struct Texture Wall = T_LoadTextureFromFile(Wall, "../blocks.png", false);
-    T_LoadAtlas(&Wall, 16, 3, 6);
-
+    struct Texture Lava1 = T_LoadAtlas(&Wall, 16, 0, 0);
     unsigned int VAO = CreateVAO(VAO);
 
     unsigned int VBO = CreateVBO(VBO);
@@ -64,7 +63,7 @@ int main(int argc, const char* argv[])
         glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
         BindShader(shader);
         BindVAO(VAO);
-        Renderer_InitRect(X, Y,0.8f,0.6f, Wall.uvX/Wall.width, (Wall.uvX-Wall.GridSize)/Wall.width,(Wall.uvY+Wall.GridSize)/Wall.height,Wall.uvY/Wall.height, VAO, VBO, EBO);
+        Renderer_InitRect(X, Y,0.8f,0.6f,Lava1, VAO, VBO, EBO);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
