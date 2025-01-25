@@ -15,6 +15,12 @@
 float X = -0.5f;
 float Y = -0.5f;
 
+
+float uvX, uvY;
+float x = 96.0f;
+float y = 48.0f;
+float GridSize = 16.0f;
+
 static inline void ShouldCloseChecker(GLFWwindow** window);
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 
@@ -38,8 +44,7 @@ int main(int argc, const char* argv[])
         2,
         attributes
     );
-    struct Texture Wall = T_LoadTextureFromFile(Wall, "../mario.png");
-
+    struct Texture Wall = T_LoadTextureFromFile(Wall, "../blocks.png", false);
     unsigned int VAO = CreateVAO(VAO);
 
     unsigned int VBO = CreateVBO(VBO);
@@ -58,14 +63,15 @@ int main(int argc, const char* argv[])
     glEnableVertexAttribArray(1);
 
     // color attribute
-
     while (game.running) {
         ShouldCloseChecker(&window);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
         BindShader(shader);
         BindVAO(VAO);
-        Renderer_InitRect(X, Y, 0.5f, 0.5f,0.97f,0.0f, VAO, VBO, EBO);
+        uvX = x;
+        uvY = y;
+        Renderer_InitRect(X, Y,0.8f,0.6f, uvX/Wall.width, (uvX-GridSize)/Wall.width,(uvY+GridSize)/Wall.height,uvY/Wall.height, VAO, VBO, EBO);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
@@ -88,14 +94,18 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         game.running = false;
-    if (key == GLFW_KEY_D && action == GLFW_PRESS)
+    if (key == GLFW_KEY_D && action == GLFW_PRESS){
          X += 0.1f;
-    else if (key == GLFW_KEY_A && action == GLFW_PRESS)
+         x += GridSize;}
+    else if (key == GLFW_KEY_A && action == GLFW_PRESS){
          X -= 0.1f;
-    else if (key == GLFW_KEY_W && action == GLFW_PRESS)
+         x -= GridSize;}
+    else if (key == GLFW_KEY_W && action == GLFW_PRESS){
          Y += 0.1f;
-    else if (key == GLFW_KEY_S && action == GLFW_PRESS)
+         y += GridSize;}
+    else if (key == GLFW_KEY_S && action == GLFW_PRESS){
          Y -= 0.1f;
+         y -= GridSize;}
 }
 
 

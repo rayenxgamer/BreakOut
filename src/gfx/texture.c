@@ -1,20 +1,24 @@
+#include "shader.h"
 #include <stdio.h>
 #include <stdbool.h>
 #include <sys/types.h>
 #include <texture.h>
 
-struct Texture T_LoadTextureFromFile(struct Texture self, const char* path){
+struct Texture T_LoadTextureFromFile(struct Texture self, const char* path, bool flip){
     glGenTextures(1,&self.ID);
     glBindTexture(GL_TEXTURE_2D, self.ID);
     // paramamamamamother
 
-
+    if (flip) {
         stbi_set_flip_vertically_on_load(true);
+    }else{
+        stbi_set_flip_vertically_on_load(false);
+    }
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
     // allocate data for the image
     u_char* image = stbi_load(path, &self.width, &self.height, &self.nrChannels, 0);
@@ -43,6 +47,13 @@ struct Texture T_LoadTextureFromFile(struct Texture self, const char* path){
     // unbind after generating, unsure if this will cause problems since im gonna write a bind function anyways
     glBindTexture(GL_TEXTURE_2D, 0);
 
+    return self;
+}
+
+struct Texture T_LoadAtlas(struct Texture self, int GridX, int GridY, int Posx, int Posy){
+    // apparently i need this?
+    // TODO: figure out why i might need this
+    size_t px_x = self.width/GridX;
     return self;
 }
 
