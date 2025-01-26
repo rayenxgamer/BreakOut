@@ -1,7 +1,6 @@
 CMakeFiles/Breakout.dir/src/main.c.o: \
  /home/ray/C/Projects/BreakOut/src/main.c /usr/include/stdc-predef.h \
- /home/ray/C/Projects/BreakOut/src/gfx/renderer.h \
- /home/ray/C/Projects/BreakOut/src/gfx/texture.h \
+ /home/ray/C/Projects/BreakOut/src/gfx/EBO.h \
  /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
  /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
@@ -14,6 +13,8 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
+ /home/ray/C/Projects/BreakOut/src/gfx/renderer.h \
+ /home/ray/C/Projects/BreakOut/src/gfx/texture.h \
  /home/ray/C/Projects/BreakOut/lib/stb/stb_image.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \

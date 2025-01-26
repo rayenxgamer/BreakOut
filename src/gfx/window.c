@@ -30,6 +30,9 @@ void init_window(GLFWwindow** window, int height, int width, const char* title)
         exit(EXIT_FAILURE);
     }
 
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     game.running = true;
 }
 

@@ -753,6 +753,7 @@ CMakeFiles/Breakout.dir/src/main.c.o
  /home/ray/C/Projects/BreakOut/lib/glad/glad.h
  /home/ray/C/Projects/BreakOut/lib/glfw/glfw3.h
  /home/ray/C/Projects/BreakOut/lib/stb/stb_image.h
+ /home/ray/C/Projects/BreakOut/src/gfx/EBO.h
  /home/ray/C/Projects/BreakOut/src/gfx/VAO.h
  /home/ray/C/Projects/BreakOut/src/gfx/VBO.h
  /home/ray/C/Projects/BreakOut/src/gfx/game.h

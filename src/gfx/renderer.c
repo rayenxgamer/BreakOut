@@ -17,10 +17,10 @@ void Renderer_InitRect(float x, float y, float height, float width,struct Textur
         uvY1 = 0.0f; uvY2 = 1.0f;
     }
     float RectVertices[] = {
-         x,  y + height,         0.0f, uvX2,uvY2,  // top right
-         x, y,                   0.0f, uvX2,uvY1,  // bottom right
-         x + width, y,           0.0f, uvX1,uvY1,  // bottom left
-         x + width,  y + height, 0.0f, uvX1,uvY2   // top left
+         x,  y + height,         0.0f, uvX2,uvY1,  // top right
+         x, y,                   0.0f, uvX2,uvY2,  // bottom right
+         x + width, y,           0.0f, uvX1,uvY2,  // bottom left
+         x + width,  y + height, 0.0f, uvX1,uvY1   // top left
     };
     unsigned int indices[] = {  // note that we start from 0!
         0, 1, 3,   // first triangle

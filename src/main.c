@@ -1,3 +1,4 @@
+#include "EBO.h"
 #include "renderer.h"
 #include "shader.h"
 #include <stdio.h>
@@ -27,8 +28,6 @@ int main(int argc, const char* argv[])
     };
     // Initialize window
     init_window(&window, WIDTH, HEIGHT, "Breakout");
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glfwSetKeyCallback(window, key_callback);
 
     // Create shader
@@ -39,12 +38,11 @@ int main(int argc, const char* argv[])
         attributes
     );
     struct Texture Wall = T_LoadTextureFromFile(Wall, "../blocks.png", false);
-    struct Texture Lava1 = T_LoadAtlas(&Wall, 16, 0, 0);
+    struct Texture Lava1 = T_LoadAtlas(&Wall, 16, 7, 0);
     unsigned int VAO = CreateVAO(VAO);
 
     unsigned int VBO = CreateVBO(VBO);
-    unsigned int EBO;
-    glGenBuffers(1,&EBO);
+    unsigned int EBO = CreateEBO(EBO);
     BindVAO(VAO);
     BindVBO(VBO);
     T_Bind(Wall);
