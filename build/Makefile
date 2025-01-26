@@ -201,6 +201,30 @@ src/gfx/VBO.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/VBO.c.s
 .PHONY : src/gfx/VBO.c.s
 
+src/gfx/camera.o: src/gfx/camera.c.o
+.PHONY : src/gfx/camera.o
+
+# target to build an object file
+src/gfx/camera.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/camera.c.o
+.PHONY : src/gfx/camera.c.o
+
+src/gfx/camera.i: src/gfx/camera.c.i
+.PHONY : src/gfx/camera.i
+
+# target to preprocess a source file
+src/gfx/camera.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/camera.c.i
+.PHONY : src/gfx/camera.c.i
+
+src/gfx/camera.s: src/gfx/camera.c.s
+.PHONY : src/gfx/camera.s
+
+# target to generate assembly for a file
+src/gfx/camera.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/camera.c.s
+.PHONY : src/gfx/camera.c.s
+
 src/gfx/game.o: src/gfx/game.c.o
 .PHONY : src/gfx/game.o
 
@@ -411,6 +435,9 @@ help:
 	@echo "... src/gfx/VBO.o"
 	@echo "... src/gfx/VBO.i"
 	@echo "... src/gfx/VBO.s"
+	@echo "... src/gfx/camera.o"
+	@echo "... src/gfx/camera.i"
+	@echo "... src/gfx/camera.s"
 	@echo "... src/gfx/game.o"
 	@echo "... src/gfx/game.i"
 	@echo "... src/gfx/game.s"

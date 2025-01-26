@@ -17,6 +17,7 @@ add_executable(Breakout
     src/gfx/VBO.c
     src/gfx/EBO.c
     src/gfx/renderer.c
+    src/gfx/camera.c
 )
 
 target_include_directories(Breakout PUBLIC

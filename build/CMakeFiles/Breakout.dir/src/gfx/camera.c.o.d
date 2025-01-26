@@ -1,6 +1,9 @@
-CMakeFiles/Breakout.dir/src/main.c.o: \
- /home/ray/C/Projects/BreakOut/src/main.c /usr/include/stdc-predef.h \
- /home/ray/C/Projects/BreakOut/src/gfx/EBO.h \
+CMakeFiles/Breakout.dir/src/gfx/camera.c.o: \
+ /home/ray/C/Projects/BreakOut/src/gfx/camera.c \
+ /usr/include/stdc-predef.h \
+ /home/ray/C/Projects/BreakOut/src/gfx/camera.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/types.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdalign.h \
  /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
  /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
@@ -13,7 +16,7 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/affine2d.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/cglm.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/common.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
@@ -41,7 +44,6 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/float.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdbool.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/types.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdalign.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/simd/intrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mmintrin.h \
@@ -49,38 +51,24 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/emmintrin.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/simd/x86.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/simd/intrin.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/util.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/vec2.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/util.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/vec2-ext.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/mat3.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/vec3.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/vec4.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/vec4-ext.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/vec3-ext.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/mat3.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/../../common.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/../intrin.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/util.h \
- /home/ray/C/Projects/BreakOut/src/gfx/renderer.h \
- /home/ray/C/Projects/BreakOut/src/gfx/texture.h \
- /home/ray/C/Projects/BreakOut/lib/stb/stb_image.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h \
- /home/ray/C/Projects/BreakOut/src/gfx/shader.h /usr/include/assert.h \
- /usr/include/string.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/cglm.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/ivec2.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/ivec3.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/ivec4.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/mat4.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/mat4.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/mat4x2.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/../../common.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/../intrin.h \
+ /usr/include/assert.h /home/ray/C/Projects/BreakOut/lib/cglm/mat4x2.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/mat4x3.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/mat3.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/simd/sse2/mat3.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/mat3x2.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/mat3x4.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/mat2.h \
@@ -112,7 +100,13 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /home/ray/C/Projects/BreakOut/lib/cglm/aabb2d.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/box.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/color.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/io.h \
+ /home/ray/C/Projects/BreakOut/lib/cglm/io.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/project.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/clipspace/project_no.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/clipspace/../vec3.h \
@@ -123,10 +117,6 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /home/ray/C/Projects/BreakOut/lib/cglm/bezier.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/ray.h \
  /home/ray/C/Projects/BreakOut/lib/cglm/affine2d.h \
- /home/ray/C/Projects/BreakOut/lib/glfw/glfw3.h \
- /home/ray/C/Projects/BreakOut/src/gfx/window.h \
- /home/ray/C/Projects/BreakOut/src/gfx/game.h \
- /home/ray/C/Projects/BreakOut/src/gfx/VAO.h \
- /home/ray/C/Projects/BreakOut/src/gfx/VBO.h \
- /home/ray/C/Projects/BreakOut/src/gfx/camera.h \
- /home/ray/C/Projects/BreakOut/lib/cglm/types.h
+ /home/ray/C/Projects/BreakOut/src/gfx/shader.h /usr/include/string.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/strings.h

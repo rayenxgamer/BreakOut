@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Breakout.dir/src/gfx/VAO.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/VBO.c.o"
   "CMakeFiles/Breakout.dir/src/gfx/VBO.c.o.d"
+  "CMakeFiles/Breakout.dir/src/gfx/camera.c.o"
+  "CMakeFiles/Breakout.dir/src/gfx/camera.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/game.c.o"
   "CMakeFiles/Breakout.dir/src/gfx/game.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/renderer.c.o"
