@@ -1,4 +1,8 @@
 #pragma once
+#include "box2d/id.h"
+#include "shader.h"
 #include <texture.h>
+#include <box2d/box2d.h>
 
-void Renderer_InitRect(float x, float y, float height, float width,struct Texture self, unsigned int VAO, unsigned int VBO,unsigned int EBO);
+void Renderer_FillRect(float height, float width, struct Texture self,struct Shader shader,
+                       unsigned int VAO, unsigned int VBO, unsigned int EBO, b2BodyId body);

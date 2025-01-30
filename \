@@ -1,0 +1,244 @@
+#include "EBO.h"
+#include "box2d/box2d.h"
+#include "box2d/id.h"
+#include "physics.h"
+#include "renderer.h"
+#include "shader.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <glad/glad.h>
+#include <glfw/glfw3.h>
+#include <stdlib.h>
+#include <window.h>
+#include <game.h>
+#include <VAO.h>
+#include <VBO.h>
+#include <texture.h>
+#include <camera.h>
+
+#define HEIGHT 800
+#define WIDTH 600
+float X = 200;
+float Y = 400;
+
+mat4 projection;
+mat4 view;
+mat4 model,model2;
+b2WorldId worldID;
+b2BodyId bodyID;
+struct Camera camera;
+static inline void ShouldCloseChecker(GLFWwindow** window);
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+void framebuffersize_callback(GLFWwindow* window, int width, int height);
+
+
+
+// b2d
+
+void DrawTransform(const b2Transform xf, void* context);
+void DrawPolygon(const b2Vec2* vertices, int vertexCount, b2HexColor color, void* context);
+void DrawCircle(b2Vec2 center, float radius, const b2HexColor color, void* context);
+void DrawSegment(b2Vec2 p1, b2Vec2 p2,  b2HexColor color, void* context);
+void DrawAABB(b2AABB* aabb, const b2HexColor c);
+
+
+int main(int argc, const char* argv[])
+{
+    GLFWwindow* window;
+    struct VertexAttr attributes[] = {
+        {0, "position"},
+        {1, "texture"},
+    };
+    // Initialize window
+    init_window(&window, WIDTH, HEIGHT, "Breakout");
+    glfwSetFramebufferSizeCallback(window, framebuffersize_callback);
+    glfwSetKeyCallback(window, key_callback);
+    // Create shader
+    struct Shader shader = CreateShader(
+        "../vertex_shader.glsl",
+        "../fragment_shader.glsl",
+        2,
+        attributes
+    );
+    camera = C_CreateCamera(camera,(vec2){0.0,0.0});
+    C_GetProjMatrix(camera, HEIGHT, HEIGHT, projection);
+    C_GetViewMatrix(camera, view);
+    glm_mat4_identity(model);
+    struct Texture Wall = T_LoadTextureFromFile(Wall, "../blocks.png", false);
+    struct Texture Lava1 = T_LoadAtlas(&Wall, 16, 7, 5);
+    struct Texture Lava2 = T_LoadAtlas(&Wall, 16, 7, 9);
+    unsigned int VAO = CreateVAO(VAO);
+
+    // initialize world
+    worldID = initPWorld(worldID, -200);
+    b2BodyId box = initStaticPoly(worldID, 300, 150,20 , 300, false);
+
+    b2BodyId box = initStaticPoly(worldID, 300, 150,20 , 300, false);
+    bodyID = initStaticPoly(worldID,300,300,200.0f,200.0f, true);
+    unsigned int VBO = CreateVBO(VBO);
+    unsigned int EBO = CreateEBO(EBO);
+    BindVAO(VAO);
+    BindVBO(VBO);
+    T_Bind(Wall);
+
+    // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
+    // position attribute
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(0);
+    glEnableVertexAttribArray(1);
+
+
+while (game.running) {
+    UpdatePWorld(worldID, 1.0f/60.0f, 4.0f);
+
+    // Get the position and rotation from the Box2D body
+    b2Vec2 position = b2Body_GetPosition(bodyID);
+    b2Vec2 position1 = b2Body_GetPosition(box);
+    float rotationAngle = b2Rot_GetAngle(b2Body_GetRotation(bodyID)); // Rotation angle in radians
+
+    printf("%4.2f %4.2f %4.2f\n", position.x, position.y, rotationAngle);
+
+    ShouldCloseChecker(&window);
+
+    // Clear the screen
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
+
+    // Bind and configure the shader
+    BindShader(shader);
+    Shader_SetMat4(shader, "projection", projection);
+    Shader_SetMat4(shader, "view", view);
+
+    // Update the model matrix
+    glm_mat4_identity(model); // Reset the model matrix
+    glm_translate(model, (vec3){position.x, position.y, 0.0f}); // Translate to the Box2D body's position
+    glm_rotate(model, rotationAngle, (vec3){0.0f, 0.0f, 1.0f}); // Rotate around the Z-axis
+
+    Shader_SetMat4(shader, "model", model);
+    // Render the rectangle
+    BindVAO(VAO);
+    Renderer_InitRect(position.x, position.y, 200, 200, Lava1, VAO, VBO, EBO);
+    glm_mat4_identity(model);
+    glm_translate(model, (vec3){position1.x, position1.y, 0.0f}); // Translate to the Box2D body's position
+    Shader_SetMat4(shader, "model", model);
+    Renderer_InitRect(position1.x, position1.y, 20, 300, Lava2, VAO, VBO, EBO);
+    glm_mat4_identity(model);
+    Shader_SetMat4(shader, "model", model);
+
+    // Debug drawing for Box2D
+    b2DebugDraw debugdraw = b2DefaultDebugDraw();
+    debugdraw.drawAABBs = true;
+    debugdraw.drawShapes = true;
+    debugdraw.DrawCircle = DrawCircle;
+    debugdraw.DrawPolygon = DrawPolygon;
+    b2World_Draw(worldID, &debugdraw);
+
+
+    glfwSwapBuffers(window);
+    glfwPollEvents();
+}
+
+
+    DeleteShader(shader);
+    Shutdown_Window(&window);
+
+    return 0;
+}
+
+
+static inline void ShouldCloseChecker(GLFWwindow** window)
+{
+     if (glfwWindowShouldClose(*window)){
+         game.running = false;
+     }
+}
+
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+    b2Vec2 velocity = b2Body_GetLinearVelocity(bodyID);
+
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+        game.running = false;
+    if (key == GLFW_KEY_D && action == GLFW_PRESS)
+         velocity.x = 150.0f;
+    else if (key == GLFW_KEY_A && action == GLFW_PRESS)
+         velocity.x = -150.0f;
+    else if (key == GLFW_KEY_W && action == GLFW_PRESS)
+         velocity.y = 150.0f;
+    else if (key == GLFW_KEY_S && action == GLFW_PRESS)
+         velocity.y = -150.0f;
+    b2Body_SetLinearVelocity(bodyID, velocity);
+}
+
+void framebuffersize_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}
+
+
+
+void DrawPolygon(const b2Vec2* vertices, int vertexCount, b2HexColor color, void* context)
+{
+    color = b2_colorAntiqueWhite;
+    glColor4f(0, 1, 0, 0.5f);
+    glBegin(GL_LINE_LOOP);
+    for (int i = 0; i < vertexCount; i++) {
+        b2Vec2 v = vertices[i];
+        glVertex2f(v.x, v.y);
+    }
+    glEnd();
+}
+
+void DrawCircle(b2Vec2 center, float radius, const b2HexColor color, void* context) {
+    const float k_segments = 16.0f;
+    int vertexCount = 16;
+    const float k_increment = 2.0f * 3.1415926535 / k_segments;
+    float theta = 0.0f;
+
+    glColor4f(1, 0, 0, 1);
+    glBegin(GL_LINE_LOOP);
+    GLfloat glVertices[vertexCount * 2];
+    for (int i = 0; i < k_segments; ++i) {
+        b2Vec2 v;
+        v.x = center.x + radius * cos(theta);
+        v.y = center.y + radius * sin(theta);
+        glVertex2f(v.x, v.y);
+        theta += k_increment;
+    }
+    glEnd();
+}
+
+
+void DrawAABB(b2AABB* aabb, const b2HexColor c) {
+    glColor4f(1, 0.2, 0.4, 1);
+    glBegin(GL_LINE_LOOP);
+    glVertex2f(aabb->lowerBound.x, aabb->lowerBound.y);
+    glVertex2f(aabb->upperBound.x, aabb->lowerBound.y);
+    glVertex2f(aabb->upperBound.x, aabb->upperBound.y);
+    glVertex2f(aabb->lowerBound.x, aabb->upperBound.y);
+    glEnd();
+}
+void DrawSegment(b2Vec2 p1, b2Vec2 p2,  b2HexColor color, void* context){
+    glColor4f(0.2, 0.1, 0.2, 1);
+    glBegin(GL_LINES);
+    glVertex2f(p1.x, p1.y);
+    glVertex2f(p2.x, p2.y);
+    glEnd();
+}
+void DrawTransform(const b2Transform xf, void* context) {
+    b2Vec2 p1 = xf.p;
+    b2Vec2 p2;
+    const float k_axisScale = 0.4f;
+
+    // Calculate the x-axis
+    p2.x = p1.x + k_axisScale * xf.q.c;
+    p2.y = p1.y + k_axisScale * xf.q.s;
+    DrawSegment(p1, p2, b2_colorAliceBlue, context );
+
+    // Calculate the y-axis
+    p2.x = p1.x - k_axisScale * xf.q.s;
+    p2.y = p1.y + k_axisScale * xf.q.c;
+    DrawSegment(p1, p2, b2_colorAliceBlue, context);
+}
+

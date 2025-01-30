@@ -56,7 +56,6 @@ struct Texture T_LoadAtlas(struct Texture* self,float GridSize, float GridX, flo
     self -> GridSize = GridSize;
     float i = 0.0f;
     float j = 0.0f;
-    GridX++;
     GridX = GridX * GridSize;
     GridY = GridY * GridSize;
     while (i<GridX) {

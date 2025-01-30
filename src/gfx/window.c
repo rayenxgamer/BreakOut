@@ -13,7 +13,7 @@ void init_window(GLFWwindow** window, int height, int width, const char* title)
     // Setting the OpenGL window
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
 
     // Creating the window
     *window = glfwCreateWindow(width, height, title, NULL, NULL);
@@ -30,7 +30,6 @@ void init_window(GLFWwindow** window, int height, int width, const char* title)
         exit(EXIT_FAILURE);
     }
 
-    glViewport(0,0,height,width);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 

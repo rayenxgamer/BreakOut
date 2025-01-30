@@ -14,6 +14,7 @@ Breakout: \
   CMakeFiles/Breakout.dir/src/gfx/EBO.c.o \
   CMakeFiles/Breakout.dir/src/gfx/renderer.c.o \
   CMakeFiles/Breakout.dir/src/gfx/camera.c.o \
+  CMakeFiles/Breakout.dir/src/gfx/physics.c.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libglfw.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so \
@@ -22,6 +23,7 @@ Breakout: \
   /usr/lib/libmvec.so.1 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libdl.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libpthread.a \
+  /home/ray/C/Projects/BreakOut/lib/box2d/libbox2d.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libgcc_s.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libgcc_s.so \
@@ -74,6 +76,8 @@ CMakeFiles/Breakout.dir/src/gfx/renderer.c.o:
 
 CMakeFiles/Breakout.dir/src/gfx/camera.c.o:
 
+CMakeFiles/Breakout.dir/src/gfx/physics.c.o:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libglfw.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so:
@@ -89,6 +93,8 @@ CMakeFiles/Breakout.dir/src/gfx/camera.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libdl.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libpthread.a:
+
+/home/ray/C/Projects/BreakOut/lib/box2d/libbox2d.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a:
 

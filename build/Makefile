@@ -249,6 +249,30 @@ src/gfx/game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/game.c.s
 .PHONY : src/gfx/game.c.s
 
+src/gfx/physics.o: src/gfx/physics.c.o
+.PHONY : src/gfx/physics.o
+
+# target to build an object file
+src/gfx/physics.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/physics.c.o
+.PHONY : src/gfx/physics.c.o
+
+src/gfx/physics.i: src/gfx/physics.c.i
+.PHONY : src/gfx/physics.i
+
+# target to preprocess a source file
+src/gfx/physics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/physics.c.i
+.PHONY : src/gfx/physics.c.i
+
+src/gfx/physics.s: src/gfx/physics.c.s
+.PHONY : src/gfx/physics.s
+
+# target to generate assembly for a file
+src/gfx/physics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/physics.c.s
+.PHONY : src/gfx/physics.c.s
+
 src/gfx/renderer.o: src/gfx/renderer.c.o
 .PHONY : src/gfx/renderer.o
 
@@ -441,6 +465,9 @@ help:
 	@echo "... src/gfx/game.o"
 	@echo "... src/gfx/game.i"
 	@echo "... src/gfx/game.s"
+	@echo "... src/gfx/physics.o"
+	@echo "... src/gfx/physics.i"
+	@echo "... src/gfx/physics.s"
 	@echo "... src/gfx/renderer.o"
 	@echo "... src/gfx/renderer.i"
 	@echo "... src/gfx/renderer.s"

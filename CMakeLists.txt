@@ -18,6 +18,7 @@ add_executable(Breakout
     src/gfx/EBO.c
     src/gfx/renderer.c
     src/gfx/camera.c
+    src/gfx/physics.c
 )
 
 target_include_directories(Breakout PUBLIC
@@ -32,4 +33,10 @@ target_link_libraries(Breakout PRIVATE
     m
     dl
     pthread
+)
+
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/box2d)
+
+target_link_libraries(Breakout PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/box2d/libbox2d.a
 )
