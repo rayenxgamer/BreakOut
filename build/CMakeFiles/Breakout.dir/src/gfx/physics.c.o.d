@@ -27,4 +27,11 @@ CMakeFiles/Breakout.dir/src/gfx/physics.c.o: \
  /home/ray/C/Projects/BreakOut/lib/box2d/types.h \
  /home/ray/C/Projects/BreakOut/src/gfx/physics.h \
  /home/ray/C/Projects/BreakOut/lib/glad/glad.h \
- /usr/include/KHR/khrplatform.h
+ /usr/include/KHR/khrplatform.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h

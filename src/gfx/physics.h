@@ -16,6 +16,7 @@ b2WorldId initPWorld(b2WorldId self, float gravity);
 b2BodyId initRect(b2WorldId worldID,
                           float x, float y, float height, float width, bool dyn);
 
+b2Vec2 ConvertToGridPos(float x,float y);
 void DebugDraw(b2WorldId worldID);
 // updating the world, should be put in the game loop
 void UpdatePWorld(b2WorldId self, float timestep, int substep);

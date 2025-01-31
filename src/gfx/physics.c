@@ -4,6 +4,7 @@
 #include "box2d/math_functions.h"
 #include "box2d/types.h"
 #include <physics.h>
+#include <stdio.h>
 
 
 void DrawTransform(const b2Transform xf, void* context);
@@ -22,14 +23,14 @@ b2WorldId initPWorld(b2WorldId self, float gravity){
 
 // initialize a rectangle in the physics world so it can be filled with opengl later
 b2BodyId initRect(b2WorldId worldID,
-                          float x, float y, float height, float width, bool dyn){
+                          float PosX, float PosY, float height, float width, bool dyn){
     b2BodyDef groundBodyDef = b2DefaultBodyDef();
     if (dyn) {
         groundBodyDef.type = b2_dynamicBody;
     } else {
         groundBodyDef.type = b2_staticBody;
     }
-    groundBodyDef.position = (b2Vec2){x, y};
+    groundBodyDef.position = ConvertToGridPos(PosX, PosY);
     b2BodyId bodyID = b2CreateBody(worldID, &groundBodyDef);
     b2Polygon groundBox = b2MakeBox(width/2, height/2);
     b2ShapeDef groundShapeDef = b2DefaultShapeDef();
@@ -41,6 +42,11 @@ b2BodyId initRect(b2WorldId worldID,
     return bodyID;
 }
 
+b2Vec2 ConvertToGridPos(float x,float y){
+    x = (x * 100) + 50;
+    y = (y*100) + 50;
+    return (b2Vec2){x,y};
+}
 // the function to enable debug drawing
 void DebugDraw(b2WorldId worldID){
     b2DebugDraw debugdraw = b2DefaultDebugDraw();

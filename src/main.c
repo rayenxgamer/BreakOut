@@ -68,9 +68,16 @@ int main(int argc, const char* argv[])
     worldID = initPWorld(worldID, -400);
 
     // make physics objects for the opengl objects
-    bodyID = initRect(worldID,300,300,200.0f,200.0f, true);
-    b2BodyId box = initRect(worldID, 400, -100,600 , 1000, false);
+    // TODO: make the physics object creation function take a single digit number for height and width to determine where the
+    // block will lie(?)
 
+    bodyID = initRect(worldID,3,3,200.0f,200.0f, true);
+    // itll be 100 per next block and the offset from 0 is 50
+    // pos 0,0 should be BOTTOM* left with the whole block visible
+    // because the world origin is at the bottom left of the screen right now according to the ortho projection
+
+    // should appear at the top right
+    b2BodyId box = initRect(worldID, 7, 7,100 , 100, false);
     BindVAO(VAO);
     BindVBO(VBO);
 
@@ -93,7 +100,7 @@ while (game.running) {
     ShouldCloseChecker(&window);
 
     // Clear the screen
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT);
     glClearColor(0.41f, 0.65f, 0.90f, 1.0f);
 
     // Bind and configure the shader
@@ -104,7 +111,7 @@ while (game.running) {
     // Render the rectangles
     BindVAO(VAO);
     Renderer_FillRect(200, 200, Block,shader, VAO, VBO, EBO, bodyID);
-    Renderer_FillRect(600, 1000, Ground,shader, VAO, VBO, EBO, box);
+    Renderer_FillRect(100, 100, Ground,shader, VAO, VBO, EBO, box);
 
     // enable DebugDraw
     DebugDraw(worldID);
