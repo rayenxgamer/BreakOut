@@ -297,6 +297,30 @@ src/gfx/renderer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/renderer.c.s
 .PHONY : src/gfx/renderer.c.s
 
+src/gfx/scene.o: src/gfx/scene.c.o
+.PHONY : src/gfx/scene.o
+
+# target to build an object file
+src/gfx/scene.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/scene.c.o
+.PHONY : src/gfx/scene.c.o
+
+src/gfx/scene.i: src/gfx/scene.c.i
+.PHONY : src/gfx/scene.i
+
+# target to preprocess a source file
+src/gfx/scene.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/scene.c.i
+.PHONY : src/gfx/scene.c.i
+
+src/gfx/scene.s: src/gfx/scene.c.s
+.PHONY : src/gfx/scene.s
+
+# target to generate assembly for a file
+src/gfx/scene.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/gfx/scene.c.s
+.PHONY : src/gfx/scene.c.s
+
 src/gfx/shader.o: src/gfx/shader.c.o
 .PHONY : src/gfx/shader.o
 
@@ -471,6 +495,9 @@ help:
 	@echo "... src/gfx/renderer.o"
 	@echo "... src/gfx/renderer.i"
 	@echo "... src/gfx/renderer.s"
+	@echo "... src/gfx/scene.o"
+	@echo "... src/gfx/scene.i"
+	@echo "... src/gfx/scene.s"
 	@echo "... src/gfx/shader.o"
 	@echo "... src/gfx/shader.i"
 	@echo "... src/gfx/shader.s"

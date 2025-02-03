@@ -45,6 +45,7 @@ b2BodyId initRect(b2WorldId worldID,
 b2Vec2 ConvertToGridPos(float x,float y){
     x = (x * 100) + 50;
     y = (y*100) + 50;
+    y = 800 - y;
     return (b2Vec2){x,y};
 }
 // the function to enable debug drawing

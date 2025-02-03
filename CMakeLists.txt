@@ -19,6 +19,7 @@ add_executable(Breakout
     src/gfx/renderer.c
     src/gfx/camera.c
     src/gfx/physics.c
+    src/gfx/scene.c
 )
 
 target_include_directories(Breakout PUBLIC

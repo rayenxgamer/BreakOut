@@ -16,6 +16,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Breakout.dir/src/gfx/physics.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/renderer.c.o"
   "CMakeFiles/Breakout.dir/src/gfx/renderer.c.o.d"
+  "CMakeFiles/Breakout.dir/src/gfx/scene.c.o"
+  "CMakeFiles/Breakout.dir/src/gfx/scene.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/shader.c.o"
   "CMakeFiles/Breakout.dir/src/gfx/shader.c.o.d"
   "CMakeFiles/Breakout.dir/src/gfx/texture.c.o"

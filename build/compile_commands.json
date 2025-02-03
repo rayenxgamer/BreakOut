@@ -76,5 +76,11 @@
   "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/physics.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/physics.c",
   "file": "/home/ray/C/Projects/BreakOut/src/gfx/physics.c",
   "output": "CMakeFiles/Breakout.dir/src/gfx/physics.c.o"
+},
+{
+  "directory": "/home/ray/C/Projects/BreakOut/build",
+  "command": "/usr/bin/cc  -I/home/ray/C/Projects/BreakOut/lib -I/home/ray/C/Projects/BreakOut/src/gfx  -o CMakeFiles/Breakout.dir/src/gfx/scene.c.o -c /home/ray/C/Projects/BreakOut/src/gfx/scene.c",
+  "file": "/home/ray/C/Projects/BreakOut/src/gfx/scene.c",
+  "output": "CMakeFiles/Breakout.dir/src/gfx/scene.c.o"
 }
 ]

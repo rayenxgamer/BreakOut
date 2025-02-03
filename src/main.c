@@ -1,6 +1,7 @@
 #include "box2d/box2d.h"
 #include "physics.h"
 #include "renderer.h"
+#include "scene.h"
 #include "shader.h"
 #include <window.h>
 #include <game.h>
@@ -28,6 +29,15 @@ static inline void ShouldCloseChecker(GLFWwindow** window);
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
 void framebuffersize_callback(GLFWwindow* window, int width, int height);
 
+// first one is the number of strings, second one is the thing inside the string
+// y then x
+const char Level[7][7] ={   "1919191",// 0
+                            "1222221",// 1
+                            "1222221",// 2
+                            "1222221",// 3
+                            "1999991",// 4
+                            "1999991",// 5
+                            "1999991",};// 6
 
 int main(int argc, const char* argv[])
 {
@@ -66,18 +76,19 @@ int main(int argc, const char* argv[])
 
     // initialize world
     worldID = initPWorld(worldID, -400);
+    SpawnBlocks(Level, worldID);
 
     // make physics objects for the opengl objects
     // TODO: make the physics object creation function take a single digit number for height and width to determine where the
     // block will lie(?)
 
-    bodyID = initRect(worldID,3,3,200.0f,200.0f, true);
+    bodyID = initRect(worldID,7,7,200.0f,200.0f, true);
     // itll be 100 per next block and the offset from 0 is 50
     // pos 0,0 should be BOTTOM* left with the whole block visible
     // because the world origin is at the bottom left of the screen right now according to the ortho projection
 
     // should appear at the top right
-    b2BodyId box = initRect(worldID, 7, 7,100 , 100, false);
+    b2BodyId box = initRect(worldID,1 , 0,100 , 100, false);
     BindVAO(VAO);
     BindVBO(VBO);
 
@@ -91,35 +102,35 @@ int main(int argc, const char* argv[])
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
 
-// main loop
-while (game.running) {
-    // initializes the box2d physics world then steps it
-    UpdatePWorld(worldID, 1.0f/60.0f, 4.0f);
+    // main loop
+    while (game.running) {
+        // initializes the box2d physics world then steps it
+        UpdatePWorld(worldID, 1.0f/60.0f, 4.0f);
 
-    // check if the window should close
-    ShouldCloseChecker(&window);
+        // check if the window should close
+        ShouldCloseChecker(&window);
 
-    // Clear the screen
-    glClear(GL_COLOR_BUFFER_BIT);
-    glClearColor(0.41f, 0.65f, 0.90f, 1.0f);
+        // Clear the screen
+        glClear(GL_COLOR_BUFFER_BIT);
+        glClearColor(0.41f, 0.65f, 0.90f, 1.0f);
 
-    // Bind and configure the shader
-    BindShader(shader);
-    Shader_SetMat4(shader, "projection", projection);
-    Shader_SetMat4(shader, "view", view);
+        // Bind and configure the shader
+        BindShader(shader);
+        Shader_SetMat4(shader, "projection", projection);
+        Shader_SetMat4(shader, "view", view);
 
-    // Render the rectangles
-    BindVAO(VAO);
-    Renderer_FillRect(200, 200, Block,shader, VAO, VBO, EBO, bodyID);
-    Renderer_FillRect(100, 100, Ground,shader, VAO, VBO, EBO, box);
+        // Render the rectangles
+        BindVAO(VAO);
+        Renderer_FillRect(200, 200, Block,shader, VAO, VBO, EBO, bodyID);
+        Renderer_FillRect(100, 100, Ground,shader, VAO, VBO, EBO, box);
 
-    // enable DebugDraw
-    DebugDraw(worldID);
+        // enable DebugDraw
+        DebugDraw(worldID);
 
-    // swap buffers
-    glfwSwapBuffers(window);
-    glfwPollEvents();
-}
+        // swap buffers
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
 
 
     // delete shader and shutdown the window
